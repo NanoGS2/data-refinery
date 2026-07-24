@@ -13,7 +13,6 @@ This project focuses on performing an **End-to-End Data Cleaning & Transformatio
 
 | Column | Initial Type | Data Quality Issue | Business Logic / Applied Transformation | Final Type |
 | :--- | :--- | :--- | :--- | :--- |
-| **ID** | Text / Int | Inconsistent formatting and leading spaces in header. | Trimmed header whitespace. Extracted numeric IDs and applied a standardized `C` prefix (`C` + ID). | Text (e.g., `C100`) |
 | **Customer_Name** | Text | Leading whitespace in header (` Customer_Name`). | Trimmed column header and text values using `Text.Trim`. | Text |
 | **Order_ID** | Text | Duplicate transaction IDs present. | Standardized text format and removed duplicate order entries based on primary key rules. | Text |
 | **Order_Date** | Text | Stored as text in `MM/DD/YYYY` format. | Converted to native `Date` data type using `English (United States)` locale parsing. | Date |
@@ -48,7 +47,6 @@ Este proyecto se enfoca en llevar a cabo un proceso completo de **Limpieza y Tra
 
 | Columna | Tipo Inicial | Problema de Calidad de Datos | Lógica de Negocio / Transformación Aplicada | Tipo Final |
 | :--- | :--- | :--- | :--- | :--- |
-| **ID** | Texto / Int | Espacios al inicio en el nombre y formato inconsistente. | Se eliminaron espacios en el encabezado. Se extrajo el ID numérico y se aplicó un prefijo estandarizado `C` (`C` + ID). | Texto (ej. `C100`) |
 | **Customer_Name** | Texto | Espacios sobrantes al inicio en el nombre de columna (` Customer_Name`). | Se limpiaron los espacios en el encabezado y texto utilizando la función `Recortar` (`Text.Trim`). | Texto |
 | **Order_ID** | Texto | Presencia de transacciones duplicadas. | Se estandarizó el formato de texto y se eliminaron registros duplicados según reglas de clave primaria. | Texto |
 | **Order_Date** | Texto | Almacenado como texto en formato `MM/DD/YYYY`. | Se transformó a tipo de dato `Fecha` nativo aplicando la configuración regional `Inglés (Estados Unidos)`. | Fecha |
