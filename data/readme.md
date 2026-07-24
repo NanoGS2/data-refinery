@@ -32,8 +32,6 @@ Se realizo un proceso de auditoria y saneamiento sobre un conjunto de 10.000 reg
 | **Last_purchase_date**| `Text` | Texto basura (`missing`, `not_a_date`). | Sustitución de valores corruptos por `null` y parseo estricto a tipo Fecha. | `Date` (`DD/MM/YYYY`) |
 | **purchase_amount**| `Float` | Presencia de valores sentinela/basura de sistemas heredados (`-999.00`) y punto decimal de EE. UU. | Eliminación de valores negativos sentinela y conversión explícita con *Configuración Regional* (`Inglés EE.UU.`) para parsear correctamente el punto decimal `.`. | `Decimal / Currency` |
 | **feedback_score**| `Float` | Inconsistencias de formato numérico. | Estandarización de escala y tipo de dato. | `Decimal / Integer` |
-
-
 | **email** | `Text` | Mayúsculas/minúsculas desordenadas y dominios/registros incompletos. | Conversión masiva a minúsculas (*Lowercase*) y filtrado/validación de estructura básica. | `Text` |
 | **Phone_number** | `Text / Int` | Registros con texto no numérico (`abc123`), ceros sueltos (`0`) y pérdida del `0` inicial (longitudes de 9 y 10 dígitos). | Reemplazo de texto ruidoso por `null`, conversión a *String* y aplicación de relleno con ceros a la izquierda (`Text.PadStart` a 10 dígitos). | `Text` (10 dígitos) |
 | **Country** | `Text` | Espacios e inconsistencia categórica. | Aplicación de `Trim` y estandarización de nombres de países. | `Text` |
