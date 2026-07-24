@@ -1,3 +1,55 @@
+¡Por supuesto! Tener la versión en inglés en tu perfil de GitHub o como sección en el README.md es un golazo para portfolios internacionales.
+
+Acá tenés la traducción adaptada con una terminología técnica impecable en inglés:
+
+Markdown
+# 🔬 Data Cleaning & ETL Pipeline: Water Quality Laboratory Register (Mendoza)
+
+## 📌 Project Overview
+This project focuses on the Extraction, Transformation, and Loading (ETL) pipeline for a public dataset containing water and effluent sampling records in the province of Mendoza, Argentina. 
+
+The raw dataset presented several structural and data quality challenges, such as double-level headers (MultiIndex), non-exclusive pivot flags, and unstandardized text fields. A Python ETL pipeline using Pandas was developed to transform the raw spreadsheet into a clean, normalized, and tabular format ready for exploratory data analysis (EDA) and reporting.
+
+---
+
+## 🛠️ Data Challenges & Applied Solutions
+
+1. **Multi-level Headers (MultiIndex Structure):**
+   * *Issue:* The original `.csv` file used two top rows to group feature categories.
+   * *Solution:* Bypassed redundant headers using `header=1` and mapped sub-columns dynamically via index positioning and categories.
+
+2. **Multi-Select Binary Flags (Unpivoting & Atomicity):**
+   * *Issue:* `ANALISIS` (Analysis Type) and `OPERADOR` (Operator/Client) columns contained binary flags (`1`) scattered across multiple non-exclusive columns.
+   * *Solution:* Consolidated active flags into unified, human-readable comma-separated strings per record.
+
+3. **Text Standardization & Data Cleaning:**
+   * Trimmed leading and trailing whitespace across all string fields (`.strip()`).
+   * Standardized text casing and typos (e.g., `factibilidad` $\rightarrow$ `Factibilidad`).
+   * Homogenized variations in entity/operator acronyms (`AySAM`, `O.G.C.`, `D.G.E.`, `D.G.I.`, etc.).
+
+---
+
+## 📊 Theoretical Discussion: Database Normalization (1NF)
+While consolidating attributes into comma-separated strings improves human readability in flat files (Excel/CSV), it strictly violates the **First Normal Form (1NF)** due to the lack of atomic values.
+
+For ingestion into a **Relational Database (SQL)** or an **Analytical Data Model (Power BI / Data Warehouse)**, the recommended approaches are:
+* **Relational SQL Model ($N:M$):** Decompose the entity into normalized tables (`Samples`, `Analysis_Types`, `Sample_Analysis_Junction`).
+* **Analytical Model:** Apply a row-level expansion (`.explode()`) in Pandas or Power Query to convert each combination into an individual record.
+
+---
+
+## 📂 Repository Structure
+* `notebooks/`: Google Colab Jupyter Notebook containing the documented Python ETL pipeline.
+* `data/`: Raw input dataset (`raw/`) and cleaned outputs in CSV/Excel (`processed/`).
+
+---
+
+## 🧰 Tech Stack
+* **Language:** Python 3.x
+* **Libraries:** Pandas
+* **Environment:** Google Colab / Jupyter Notebooks
+* --------------------------------------------------------------
+
 # 🔬 ETL y Limpieza de Datos: Registro de Laboratorio de Agua (Mendoza)
 
 ## 📌 Descripción del Proyecto
