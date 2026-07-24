@@ -48,7 +48,7 @@ For ingestion into a **Relational Database (SQL)** or an **Analytical Data Model
 * **Language:** Python 3.x
 * **Libraries:** Pandas
 * **Environment:** Google Colab / Jupyter Notebooks
-* --------------------------------------------------------------
+--------------------------------------------------------------
 
 # 🔬 ETL y Limpieza de Datos: Registro de Laboratorio de Agua (Mendoza)
 
