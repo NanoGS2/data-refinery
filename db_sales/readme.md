@@ -69,7 +69,6 @@ Data Integrity: Eliminated structural discrepancies and manual entry errors.
 
 ### 🇦🇷 / 🇪🇸 Versión en Español (`README.md`)
 
-```markdown
 # Consolidación Multifuente en Excel e Impacto de Dashboard Interactivo
 
 ## 📌 Resumen Ejecutivo
@@ -122,6 +121,7 @@ La base consolidada alimenta un **Dashboard Interactivo en Excel** con capacidad
 ├── clean_data/        # Consolidated output dataset (.xlsx)
 ├── dashboard/         # Main Excel workbook containing the Interactive Dashboard
 └── README.md          # Project documentation
+```
 
 📸 Vista Previa del Dashboard
 
