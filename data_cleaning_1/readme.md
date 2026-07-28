@@ -23,7 +23,7 @@ Below is the itemized transformation matrix detailing the data cleaning rules ap
 
 <a name="spanish-version"></a>
 
->**Español**
+**Español**
 
 Se realizo un proceso de auditoria y saneamiento sobre un conjunto de 10.000 registros de clientes. A continuación se detalla la matriz de transformaciones aplicada columna por columna:
 
