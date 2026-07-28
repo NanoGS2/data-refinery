@@ -1,5 +1,8 @@
 # 🔬 Data Cleaning & ETL Pipeline: Water Quality Laboratory Register (Mendoza)
 
+> 🌐 **Language / Idioma:** 
+> **English** (default below) | [Leer en Español 🇦🇷](#spanish-version)
+
 ## 📌 Project Overview
 This project focuses on the Extraction, Transformation, and Loading (ETL) pipeline for a public dataset containing water and effluent sampling records in the province of Mendoza, Argentina. 
 
@@ -44,6 +47,9 @@ For ingestion into a **Relational Database (SQL)** or an **Analytical Data Model
 * **Libraries:** Pandas
 * **Environment:** Google Colab / Jupyter Notebooks
 --------------------------------------------------------------
+
+
+<a name="spanish-version"></a>
 
 # 🔬 ETL y Limpieza de Datos: Registro de Laboratorio de Agua (Mendoza)
 
