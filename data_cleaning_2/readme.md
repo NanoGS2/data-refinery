@@ -2,6 +2,9 @@
 
 Data Source: https://www.kaggle.com/datasets/ruchikakumbhar1806/customer-messy-data?select=messy_customer_data.csv
 
+> 🌐 **Language / Idioma:** 
+> **English** (default below) | [Leer en Español 🇦🇷](#spanish-version)
+
 ## 📌 English
 
 ### 📑 Project Overview
@@ -35,6 +38,7 @@ This project focuses on performing an **End-to-End Data Cleaning & Transformatio
 
 ---
 ---
+<a name="spanish-version"></a>
 
 ## 📌 Español
 
