@@ -1,4 +1,4 @@
-🧹 Data Cleaning & Quality Log (Customer Dataset)
+***🧹 Data Cleaning & Quality Log (Customer Dataset)
 
 An audit and data sanitation process was performed on a dataset containing 10,000 customer records. 
 Below is the itemized transformation matrix detailing the data cleaning rules applied to each column:
