@@ -1,5 +1,9 @@
 # Multi-Source Excel Consolidation & Interactive Performance Dashboard
 
+> 🌐 **Language / Idioma:** 
+> **English** (default below) | [Leer en Español 🇦🇷](#spanish-version)
+
+
 ## 📌 Executive Summary
 This project addresses a common operational challenge where annual transactional data was fragmented across 12 separate monthly Excel workbooks. Using **Power Query**, the datasets were automatically extracted, cleaned, transformed, and consolidated into a single scalable data model. 
 
@@ -66,6 +70,8 @@ Data Integrity: Eliminated structural discrepancies and manual entry errors.
 
 
 ---
+
+<a name="spanish-version"></a>
 
 ### 🇦🇷 / 🇪🇸 Versión en Español (`README.md`)
 
