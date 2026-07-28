@@ -1,8 +1,3 @@
-¡Por supuesto! Tener la versión en inglés en tu perfil de GitHub o como sección en el README.md es un golazo para portfolios internacionales.
-
-Acá tenés la traducción adaptada con una terminología técnica impecable en inglés:
-
-Markdown
 # 🔬 Data Cleaning & ETL Pipeline: Water Quality Laboratory Register (Mendoza)
 
 ## 📌 Project Overview
