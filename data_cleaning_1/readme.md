@@ -1,4 +1,7 @@
-***🧹 Data Cleaning & Quality Log (Customer Dataset)
+> 🌐 **Language / Idioma:** 
+> **English** (default below) | [Leer en Español 🇦🇷](#spanish-version)
+
+🧹 Data Cleaning & Quality Log (Customer Dataset)
 
 An audit and data sanitation process was performed on a dataset containing 10,000 customer records. 
 Below is the itemized transformation matrix detailing the data cleaning rules applied to each column:
@@ -18,7 +21,7 @@ Below is the itemized transformation matrix detailing the data cleaning rules ap
 | **Phone_number** | `Text / Int` | Non-numeric strings (`abc123`), placeholder zeros (`0`), and missing leading zeros (9 vs. 10 digit lengths). | Replaced invalid strings with `null`, casted to String, and applied left zero padding (`Text.PadStart` to 10 digits) to enforce uniform length. | `Text` (10 digits) |
 | **Country** | `Text` | Whitespaces and minor categorical naming inconsistencies. | Applied `Trim` function and standardized country name values. | `Text` |
 
-
+<a name="spanish-version"></a>
 Se realizo un proceso de auditoria y saneamiento sobre un conjunto de 10.000 registros de clientes. A continuación se detalla la matriz de transformaciones aplicada columna por columna:
 
 | Columna | Tipo Inicial | Problema Detectado (Data Issue) | Regla de Negocio / Transformación Aplicada | Estado Final |
