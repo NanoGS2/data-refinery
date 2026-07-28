@@ -22,6 +22,9 @@ Below is the itemized transformation matrix detailing the data cleaning rules ap
 | **Country** | `Text` | Whitespaces and minor categorical naming inconsistencies. | Applied `Trim` function and standardized country name values. | `Text` |
 
 <a name="spanish-version"></a>
+
+>**Español**
+
 Se realizo un proceso de auditoria y saneamiento sobre un conjunto de 10.000 registros de clientes. A continuación se detalla la matriz de transformaciones aplicada columna por columna:
 
 | Columna | Tipo Inicial | Problema Detectado (Data Issue) | Regla de Negocio / Transformación Aplicada | Estado Final |
